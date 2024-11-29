@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CV Juliana Herrera</title>
     <link rel="icon" href="https://i.postimg.cc/3JmbrpHC/Juliana-removebg-preview.png" type="image/png">
     <link rel="stylesheet" href="./dist/output.css">
     <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.min.js" defer></script>
@@ -109,6 +109,17 @@
             .header-title {
                 font-size: 2rem;
             }
+
+            .menu-responsive {
+                margin-left: -180px;
+                margin-top: -20px;
+                background-color: #63088d;
+                height: 310px;
+                font-size: 20px;
+                width: 400px;
+                padding-left: 20px;
+            }
+
         }
     </style>
 </head>
@@ -139,7 +150,7 @@
                     </div>
         
                     <div x-cloak :class="[isOpen ? 'translate-x-0 opacity-100 ' : 'opacity-0 -translate-x-full']" class="absolute inset-x-0 z-20 flex-1 w-full px-6 py-4 transition-all duration-300 ease-in-out  lg:mt-0 lg:p-0 lg:top-0 lg:relative lg:bg-transparent lg:w-auto lg:opacity-100 lg:translate-x-0 lg:flex lg:items-center lg:justify-between" style="margin-top:-30px; margin-left: 150px;">
-                        <div class="flex flex-col text-gray-600 capitalize dark:text-gray-300 lg:flex lg:px-16 lg:-mx-0  lg:flex-row lg:items-center">
+                        <div class="menu-responsive flex flex-col text-gray-600 capitalize dark:text-gray-300 lg:flex lg:px-16 lg:-mx-0  lg:flex-row lg:items-center">
                             <a href="#" class="mt-2 transition-colors duration-300 transform lg:mt-0 lg:mx-4 hover:text-gray-900 dark:hover:text-gray-200">Home</a>
                             <a href="#" class="mt-2 transition-colors duration-300 transform lg:mt-0 lg:mx-4 hover:text-gray-900 dark:hover:text-gray-200">About Me</a>
                             <a href="#" class="mt-2 transition-colors duration-300 transform lg:mt-0 lg:mx-4 hover:text-gray-900 dark:hover:text-gray-200">Services</a>
@@ -148,7 +159,7 @@
                             <a href="#" class="mt-2 transition-colors duration-300 transform lg:mt-0 lg:mx-4 hover:text-gray-900 dark:hover:text-gray-200">Education</a>
         
                             
-                        </div>
+                        
             
                         <div class="flex justify-center mt-6 lg:flex lg:mt-0 lg:-mx-2">
 
@@ -191,6 +202,7 @@
 
 
                         </div>
+                    </div>
                     </div>
                 </div>
             </div>
