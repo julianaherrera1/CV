@@ -1,79 +1,7 @@
-# Node modules
-node_modules/
-
-# Dependencias de NPM o Yarn
-npm-debug.log
-yarn-debug.log
-yarn-error.log
-
-# Archivos generados por Tailwind (CSS de salida)
-assets/css/output.css
-
-# Archivos de configuración del editor (por ejemplo, VSCode)
-.vscode/
-
-# Archivos de log
-*.log
-
-# Archivos de caché de npm
-.npm/
-
-# Archivos temporales de Mac
-.DS_Store
-
-# Archivos temporales de Linux
-*.swp
-
-# Archivos de sistema de Windows
-Thumbs.db
-Desktop.ini
-
-# Carpeta de distribución o build (si generas un build estático)
-dist/
-build/
-
-# Archivos generados por la herramienta de documentación
-*.tgz
-
-# Archivos de caché de imágenes generadas (si usas generadores de miniaturas o caché de imágenes)
-assets/images/thumbs/
-assets/images/cache/
-
 # Ignorar imágenes generadas automáticamente (si no quieres incluirlas)
 *.jpg
 *.jpeg
 *.png
 *.gif
 
-# Archivos temporales (respaldos, etc.)
-*.bak
-*.tmp
 
-# Archivos de base de datos (si estás utilizando bases de datos locales)
-*.sqlite
-*.db
-
-# Archivos de pruebas (si usas herramientas de testing y generan archivos)
-coverage/
-
-# Carpetas de configuración específicas de IDEs (como JetBrains, etc.)
-.idea/
-
-# Archivos del sistema operativo relacionados con el entorno de desarrollo
-.vscode/
-
-# Archivos generados de compilación
-*.o
-*.out
-*.exe
-*.class
-*.log
-
-# Ignorar archivos comprimidos o de respaldo generados
-*.zip
-*.tar.gz
-*.7z
-
-# Otros archivos temporales generados por editores de texto
-*.swp
-*.swo
