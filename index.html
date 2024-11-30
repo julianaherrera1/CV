@@ -12,9 +12,10 @@
         /* Estilos generales */
         body {
             font-family: 'Inter', sans-serif;
-            background-color: #f8fafc;
+            background-image: url('https://i.postimg.cc/vHBpQDZ0/fondo1.jpg');
             margin: 0;
             padding: 0;
+            overflow-x: hidden;
         }
 
         /* Fondo con overlay */
@@ -34,13 +35,12 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: rgba(0, 0, 0, 0.5); /* Filtro oscuro para mejorar la visibilidad */
-            z-index: -1;
+            background: rgba(0, 0, 0, 0.5); 
+            z-index: -1; 
         }
 
         /* Estilo para el texto en el header */
         .header-text {
-            color: white;
             font-size: 1.25rem;
         }
 
@@ -48,12 +48,11 @@
             font-size: 2.5rem;
             font-weight: bold;
             margin-bottom: 20px;
-            color: white;
         }
 
         .nav-link {
             text-decoration: none;
-            color: white;
+            
             margin: 0 15px;
             transition: color 0.3s;
         }
@@ -83,7 +82,6 @@
 
         .section-1-text {
             max-width: 600px;
-            color: #ffffff;
             font-size: 1.25rem;
             line-height: 1.6;
         }
@@ -125,9 +123,9 @@
 </head>
 
 <body>
-    <header class="bg-overlay">
-        <nav x-data="{ isOpen: false }" class=" bg-cover bg-center bg-black bg-opacity-60 relative">
-            <div class="container  px-6 py-4 mx-auto" style="margin-top: -20px;">
+    <header>
+        <nav x-data="{ isOpen: false }" class="w-full bg-cover bg-center " style="position: fixed; z-index: 100; height: 130px;">
+            <div class="container px-6 py-4 mx-auto -mt-2" >
                 <div class="lg:flex lg:items-center">
                     <div class="flex items-center justify-between">
                         <a href="#" class="block w-44 h-auto overflow-hidden">
@@ -161,7 +159,7 @@
                             
                         
             
-                        <div class="flex justify-center mt-6 lg:flex lg:mt-0 lg:-mx-2">
+                        <div class="flex justify-center mt-6 lg:flex lg:mt-0 lg:-mx-2" style="margin-left: 140px;">
 
                             <!--Github-->
                             <a href="https://github.com/julianaherrera1" target="_blank" class="mx-2 text-gray-600 transition-colors duration-300 transform dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300" aria-label="Github">
@@ -209,53 +207,132 @@
         </nav>
 
 
-      <!-- Sección 1 -->
-<div class="bg-cover bg-center bg-black bg-opacity-60 h-full w-full">
-    <div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
-        <div class="max-w-xl sm:mx-auto lg:max-w-2xl">
-            <div class="flex flex-col mb-16 sm:text-center sm:mb-0">
-
-                <!-- Nombre -->
-                <div class="max-w-xl mb-8 -mt-12 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
-                    <h2 class="max-w-lg mb-6 font-sans text-4xl font-bold leading-none tracking-tight text-white sm:text-5xl md:mx-auto">
-                        <span class="relative inline-block">
-                            <span class="relative">Hi,</span>
-                        </span>
-                        <span class="relative inline-block">
-                            <span class="relative text-purple-500">I am Juliana Herrera</span>
-                        </span>
-                    </h2>
-                </div>
-
-                <!-- Título adicional -->
-                <div class="max-w-xl mb-8 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12 -mt-8">
-                    <h3 class="max-w-lg mb-6 font-sans text-2xl font-medium text-white sm:text-3xl md:mx-auto">
-                        <span class="relative">Frontend Software Developer</span>
-                    </h3>
-                </div>
-
-                <!-- Descripción breve -->
-                <div class="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12 -mt-5">
-                    <p class="text-lg text-white sm:text-xl md:mx-auto">
-                        I am a 6th-semester Software Engineering student with a focus on Frontend Web Development, while actively expanding my skills to become a Fullstack Web Developer.
-                    </p>
-                </div>
-
-                <!-- Botón o llamada a la acción -->
-                <div class="text-center">
-                    <a href="#contact" class="inline-block px-8 py-3 mt-6 text-white bg-purple-500 hover:bg-purple-700 rounded-lg text-lg">Contact Me</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+   
 
     </header>
 
 
+    
     <main>
+
+           <!-- Sección 1 -->
+            <div class="bg-overlay">
+                <div class="bg-cover bg-center bg-black bg-opacity-60 w-full" style="height: 100%;">
+                    <div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+                        <div class="max-w-xl sm:mx-auto lg:max-w-2xl" style="margin-top: 190px;">
+                            <div class="flex flex-col mb-16 sm:text-center sm:mb-0">
+        
+                                <!-- Nombre -->
+                                <div class="max-w-xl mb-8 -mt-12 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
+                                    <h2 class="max-w-lg mb-6 font-sans text-4xl font-bold leading-none tracking-tight text-white sm:text-5xl md:mx-auto">
+                                        <span class="relative inline-block">
+                                            <span class="relative">Hi,</span>
+                                        </span>
+                                        <span class="relative inline-block">
+                                            <span class="relative text-purple-500">I am Juliana Herrera</span>
+                                        </span>
+                                    </h2>
+                                </div>
+        
+                                <!-- Título adicional -->
+                                <div class="max-w-xl mb-8 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12 -mt-8">
+                                    <h3 class="max-w-lg mb-6 font-sans text-2xl font-medium text-white sm:text-3xl md:mx-auto">
+                                        <span class="relative">Frontend Software Developer</span>
+                                    </h3>
+                                </div>
+        
+                                <!-- Descripción breve -->
+                                <div class="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12 -mt-5">
+                                    <p class="text-lg text-white sm:text-xl md:mx-auto">
+                                        I am a 6th-semester Software Engineering student with a focus on Frontend Web Development, while actively expanding my skills to become a Fullstack Web Developer.
+                                    </p>
+                                </div>
+        
+                                <!-- Botón contacto -->
+                                <div class="text-center">
+                                    <a href="#contact" class="inline-block px-8 py-3 mt-6 text-white bg-purple-500 hover:bg-purple-700 rounded-lg text-lg">Contact Me</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
        
-      
+       
+      <!--About Me section-->
+      <div class="bg-overlay container-aboutme-section">
+        <section class="bg-cover bg-center bg-black bg-opacity-60 h-screen w-full py-16" >
+    
+            
+    
+            <div class="container px-36 py-10 mx-auto -mt-28">
+
+
+                <div class="lg:-mx-6 lg:flex lg:items-center mt-36">
+                    
+                    <!-- Imagen -->
+                    <img class="object-cover object-center lg:w-3/4 lg:mx-6 w-full h-full rounded-lg lg:h-[32rem] shadow-lg hover:scale-105 transition-all duration-500 ease-in-out -mt-14" style="height: 550px;" 
+                        src="./assets/images/fotoCv3.jpeg" alt="">
+
+    
+                    <div class="mt-8 lg:w-full lg:px-6 lg:mt-0 w-96 ml-2">
+                        <!-- Título -->
+                        <h2 class="text-purple-500 font-bold hover:text-purple-300 hover:scale-110 transition-all duration-500 ease-in-out text-3xl lg:text-4xl xl:text-5xl mb-8 -m-48 ml-1 cursor-pointer">
+                            About Me
+                        </h2>
+
+                        <!-- Nombre -->
+                        <h1 class="text-3xl font-semibold text-gray-800 dark:text-white lg:text-4xl lg:w-full mb-4">
+                         Juliana Herrera
+                        </h1>
+
+                         <!-- Profesión y empresa -->
+                         <h3 class="mt-6 text-xl font-medium text-purple-400">Frontend Software Developer</h3>
+    
+                        <!-- Descripción -->
+                        <p class="max-w-full mt-6 text-gray-500 dark:text-gray-400 mb-2 leading-relaxed ">
+                            I'm a Frontend Developer passionate about building responsive and engaging websites. Currently, I'm expanding my knowledge in backend development with the goal of becoming a full-stack developer.
+                        </p>
+    
+                        <div class="border-2 border-purple-800 p-6 rounded-lg  " style="width: 700px;">
+                            <div class="grid grid-cols-2 gap-4 ">
+                                <!-- Columna 1 -->
+                                <div>
+                                    <p class="text-lg text-purple-200"><span class="font-semibold text-purple-200">Age:</span> 20</p>
+                                    <br>
+                                    <p class="text-lg text-purple-200"><span class="font-semibold text-purple-200">From:</span> Medellín, Colombia</p>
+                                </div>
+                                
+                                <!-- Columna 2 -->
+                                <div>
+                                    <p class="text-lg text-purple-200"><span class="font-semibold text-purple-200">Phone:</span> +57 311 724 9900</p>
+                                    <br>
+                                    <p class="text-lg text-purple-200"><span class="font-semibold text-purple-200">Email:</span> julianaherrera522@gmail.com</p>
+                                </div>
+                                <!-- Columna 1 (Segunda fila) -->
+                                <div>
+                                    <p class="text-lg text-purple-200"><span class="font-semibold text-purple-200">Languages:</span> Spanish (Native)</p>
+                                </div>
+                                <!-- Columna 2 (Segunda fila) -->
+                                <div>
+                                  
+                                </div>
+                            </div>
+                        </div>
+                        
+                         <!-- Botón descargar CV -->
+                         <div class="text-center -mb-28" style="margin-left: 500px;">
+                            <a href="#contact" class="inline-block px-8 py-3 mt-6 text-white bg-purple-500 hover:bg-purple-700 rounded-lg text-lg">Dowloand CV</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+     
+
 
     </main>
 
