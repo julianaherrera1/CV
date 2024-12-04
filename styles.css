@@ -1,0 +1,15 @@
+ 
+ /*Responsive Design*/
+
+ @media (max-width: 640px) {
+    .menu-responsive {
+        background-color: rgb(93, 22, 160);
+        margin-top: -20px;
+        width: 430px;
+        margin-left: -173px;
+        font-size: 19px;
+        padding-left: 20px;
+        height: 317px;
+        padding-top: 20px;
+    }
+ }
