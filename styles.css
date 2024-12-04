@@ -1,5 +1,18 @@
  
- /*Responsive Design*/
+ /* Fondo con overlay */
+ .bg-overlay {
+    /* background-image: url('https://i.postimg.cc/vHBpQDZ0/fondo1.jpg'); */
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+        url(https://i.postimg.cc/8Pn9c5CN/fondo2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+/*Responsive Design*/
 
  @media (max-width: 640px) {
     .menu-responsive {
@@ -12,4 +25,18 @@
         height: 317px;
         padding-top: 20px;
     }
+
+    .info-responsive {
+        width: 95%;
+        margin-left: -10px;
+    }
+
+    .personal-info-responsive {
+        width: 90%;
+        margin-left: -2px;
+        margin-bottom: 20px;
+    }
+
+    
+    
  }

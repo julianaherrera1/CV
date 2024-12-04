@@ -8,21 +8,6 @@
     <link rel="stylesheet" href="./dist/output.css">
     <link rel="stylesheet" href="./styles.css">
     <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.min.js" defer></script>
-    <style>
-         /* Fondo con overlay */
-         .bg-overlay {
-            /* background-image: url('https://i.postimg.cc/vHBpQDZ0/fondo1.jpg'); */
-            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
-                url(./assets/images/fondo2.jpg);
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            position: relative;
-            height: 100%;
-            width: 100%;
-        }
-    </style>
-    
 </head>
 <body style="background-color: black;">
     <header>
@@ -152,6 +137,175 @@
                 </div>
             </div>
         </div>
+
+        <!--Section 2: About me-->
+        <div class="relative text-white min-h-screen flex items-center justify-center" style="background-image: url(./assets/images/fondo1.jpg);">
+
+            <div class="absolute inset-0 bg-black opacity-90"></div>
+            
+                <div class="relative container mx-auto px-6 lg:px-20 py-12 lg:py-24" >
+                    <div class="flex flex-col lg:flex-row items-center">
+                        <!-- Información -->
+                        <div class="info-responsive lg:w-1/2 w-96 ml-4   lg:mt-0 lg:pl-16">
+                            <h2 class="text-4xl lg:text-5xl font-bold leading-tight hover:text-white transition-all duration-300">
+                                I'm <span class="text-purple-400 w-full">Juliana Herrera</span>!
+                           </h2>
+                           <h3 class="text-xl lg:text-2xl mt-2 font-medium text-purple-200">
+                            A Frontend Developer Exploring Full-Stack Horizons
+                           </h3>
+                           <p class="text-lg mt-6 text-gray-100 leading-relaxed">
+                            Passionate about crafting modern, responsive, and user-centered designs, I specialize in building experiences that connect with users. With a focus on clean code and intuitive interfaces, I aim to bridge the gap between creativity and functionality. Currently, I'm diving deeper into backend technologies to become a Full-Stack Developer.
+                            </p>         
+                            
+                        </div>
+
+                        <!--Personal Info-->
+                        <div class="personal-info-responsive bg-white bg-opacity-20 mt-8 ml-20 w-96 p-6 rounded-lg shadow-lg shadow-gray-800">
+                            <p class="text-lg mb-4"><span class="font-semibold text-purple-400">Age:</span> 20</p>
+                            <p class="text-lg mb-4"><span class="font-semibold text-purple-400">From:</span> Medellín, Colombia</p>
+                            <p class="text-lg mb-4"><span class="font-semibold text-purple-400">Phone:</span> +57 311 724 9900</p>
+                            <p class="text-lg mb-4 "><span class="font-semibold text-purple-400">Email:</span> julianaherrera522@gmail.com</p>
+                            <p class="text-lg mb-4 "><span class="font-semibold text-purple-400">Languages:</span> Spanish (Native) - English (Basic)</p>
+                            <p class="text-lg mb-4 "><span class="font-semibold text-purple-400">Focus:</span> Frontend Development</p>
+                        </div>
+
+                    </div>
+                     <!-- Botón interactivo -->
+                            <div class="mt-4 ml-20">
+                                <a href="#contact" 
+                                class="inline-block px-10 py-4 text-lg font-bold bg-purple-300 text-black rounded-full shadow-lg hover:bg-purple-800 transition-all duration-300">
+                                    Download My CV
+                                </a>
+                            </div>
+                    </div>   
+            </div>
+
+            <!--Services and Skills Section-->
+            <div class="flex flex-col lg:flex-row items-center">
+                <div class="services">
+
+                </div>
+
+                  <!--SKills Section-->
+
+                    <div class="bg-black bg-opacity-95 w-full overflow-x-hidden" >
+                        <div class="py-16 bg-transparent mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20 bg-purple-950 overflow-x-hidden w-full">
+                            <h2 class="text-center">Skills</h2>
+                            <p class="text-center">I have some knowledge about the follow technologies</p>
+                            <div class="grid row-gap-8 sm:row-gap-0 sm:grid-cols-2 lg:grid-cols-3">
+                            <div class="p-8 border-b sm:border-r">
+                                <div class="w-60 h-56 max-w-xs overflow-hidden bg-white rounded-lg shadow-lg dark:bg-gray-800">
+                                    <img class="object-cover ml-14 mt-4 w-32 " src="./assets/images/iconoHTML.png" alt="avatar">
+                                
+                                    <div class="py-5 text-center">
+                                        <a href="#" class="block text-xl font-bold text-gray-800 dark:text-white" tabindex="0" role="link">HTML</a>
+                                        <span class="text-sm text-gray-700 dark:text-gray-200">Other text</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-8 border-b lg:border-r">
+                                <div class="w-60 h-56  max-w-xs overflow-hidden bg-white rounded-lg shadow-lg dark:bg-gray-800">
+                                    <img class="object-cover ml-14 mt-4 w-32" src="./assets/images/iconCSS.png" alt="avatar">
+                                
+                                    <div class="py-5 text-center">
+                                        <a href="#" class="block text-xl font-bold text-gray-800 dark:text-white" tabindex="0" role="link">CSS</a>
+                                        <span class="text-sm text-gray-700 dark:text-gray-200">Software Engineer</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-8 border-b sm:border-r lg:border-r-0">
+                                <div class="w-60 h-56 max-w-xs overflow-hidden bg-white rounded-lg shadow-lg dark:bg-gray-800">
+                                    <img class="object-cover ml-14 mt-4 w-32" src="./assets/images/iconJavaScript.png" alt="avatar">
+                                
+                                    <div class="py-5 text-center">
+                                        <a href="#" class="block text-xl font-bold text-gray-800 dark:text-white" tabindex="0" role="link">JavaScript</a>
+                                        <span class="text-sm text-gray-700 dark:text-gray-200">Software Engineer</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-8 border-b lg:border-b-0 lg:border-r">
+                                <div class="w-60 h-56 max-w-xs overflow-hidden bg-white rounded-lg shadow-lg dark:bg-gray-800">
+                                    <img class="object-cover ml-14 mt-4 w-32" src="./assets/images/iconTailwindCSS.png" alt="avatar">
+                                
+                                    <div class="py-5 text-center">
+                                        <a href="#" class="block text-xl font-bold text-gray-800 dark:text-white" tabindex="0" role="link">TailWindCSS</a>
+                                        <span class="text-sm text-gray-700 dark:text-gray-200">Software Engineer</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-8 border-b sm:border-b-0 sm:border-r">
+                                <div class="w-60 h-56 max-w-xs overflow-hidden bg-white rounded-lg shadow-lg dark:bg-gray-800">
+                                    <img class="object-cover ml-14 mt-4 w-32" src="./assets/images/iconBootstrap.png" alt="Bootstrap">
+                                
+                                    <div class="py-5 text-center">
+                                        <a href="#" class="block text-xl font-bold text-gray-800 dark:text-white" tabindex="0" role="link">Bootstrap</a>
+                                        <span class="text-sm text-gray-700 dark:text-gray-200">Software Engineer</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-8">
+                                <div class="w-60 h-56 max-w-xs overflow-hidden bg-white rounded-lg shadow-lg dark:bg-gray-800">
+                                    <img class="object-cover ml-14 mt-4 w-32" src="./assets/images/iconNodeJs.png" alt="nodejs">
+                                
+                                    <div class="py-5 text-center">
+                                        <a href="#" class="block text-xl font-bold text-gray-800 dark:text-white" tabindex="0" role="link">NodeJS</a>
+                                        <span class="text-sm text-gray-700 dark:text-gray-200">Software Engineer</span>
+                                    </div>
+                                </div>
+                            </div>
+                    
+                            <div class="p-8 border-b lg:border-r">
+                                <div class="w-60 h-56 max-w-xs overflow-hidden bg-white rounded-lg shadow-lg dark:bg-gray-800">
+                                    <img class="object-cover ml-14 mt-4 w-32" src="./assets/images/iconCsharp.png" alt="CSharp">
+                                
+                                    <div class="py-5 text-center">
+                                        <a href="#" class="block text-xl font-bold text-gray-800 dark:text-white" tabindex="0" role="link">C#</a>
+                                        <span class="text-sm text-gray-700 dark:text-gray-200">Software Engineer</span>
+                                    </div>
+                                </div>
+                            </div>
+                    
+                            <div class="p-8 border-b lg:border-r">
+                                <div class="w-60 h-56 max-w-xs overflow-hidden bg-white rounded-lg shadow-lg dark:bg-gray-800">
+                                    <img class="object-cover ml-14 mt-4 w-32" src="./assets/images/iconC++.png" alt="c++">
+                                
+                                    <div class="py-5 text-center">
+                                        <a href="#" class="block text-xl font-bold text-gray-800 dark:text-white" tabindex="0" role="link">C++</a>
+                                        <span class="text-sm text-gray-700 dark:text-gray-200">Software Engineer</span>
+                                    </div>
+                                </div>
+                            </div>
+                    
+                            <div class="p-8 border-b lg:border-r">
+                                <div class="w-60 h-56 max-w-xs overflow-hidden bg-white rounded-lg shadow-lg dark:bg-gray-800">
+                                    <img class="object-cover ml-14 mt-4 w-32" src="./assets/images/iconGIT.png" alt="git / github">
+                                
+                                    <div class="py-5 text-center">
+                                        <a href="#" class="block text-xl font-bold text-gray-800 dark:text-white" tabindex="0" role="link">Git / Git-Hub</a>
+                                        <span class="text-sm text-gray-700 dark:text-gray-200">Software Engineer</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="p-8 border-b sm:border-r lg:border-r-0">
+                                <div class="w-60 h-56l max-w-xs overflow-hidden bg-white rounded-lg shadow-lg dark:bg-gray-800">
+                                    <img class="object-cover ml-14 mt-4 w-32" src="./assets/images/iconSQLServer.png" alt="SQLServer">
+                                
+                                    <div class="py-5 text-center">
+                                        <a href="#" class="block text-xl font-bold text-gray-800 dark:text-white" tabindex="0" role="link">SQL Server</a>
+                                        <span class="text-sm text-gray-700 dark:text-gray-200">Software Engineer</span>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+            </div>
+                
+              
+
+          
+
 
     </main>
 
