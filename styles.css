@@ -12,6 +12,34 @@
     width: 100%;
 }
 
+/* Section 3: Services Design*/
+.services-section{
+    width: 100%;
+    background-color: rgb(10, 0, 20);
+}
+
+.text-gray-200 {
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+  }
+  .peer-checked + label + div {
+    transition: max-height 0.3s ease-out;
+  }
+
+  .rounded-lg:hover {
+    background-color: #6b46c1; /* Morado más claro */
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+  }
+
+  .p-4 {
+    padding: 1.5rem; /* Incrementar el espacio interno */
+  }
+
+  .peer-checked .rotate-180 {
+    transform: rotate(180deg);
+    transition: transform 0.3s;
+  }
+  
+
 /*Responsive Design*/
 
  @media (max-width: 640px) {
