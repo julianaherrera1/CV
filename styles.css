@@ -39,8 +39,10 @@
     transition: transform 0.3s;
   }
   
-  /* Section Skills: Design*/
-  
+  /* Section Education: Design*/
+  .education-section, .experience-section{
+    background-color: rgb(6, 1, 12);
+  }
 
 
 
@@ -76,6 +78,40 @@
     grid-template-columns: repeat(2, 1fr); /* 2 columnas por fila en pantallas pequeñas */
   }
 
-  
+  /*Experience and Education*/
+  .education-experience-section{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); /* 2 columnas por fila en pantallas pequeñas */
+  }
+
+  .experience-section{
+    width: 100%;
+  }
+
+  .card-experience-1, .card-experience-2, .card-experience-3{
+    width: 350px;
+    margin-left: -30px;
+  }
+
+  .card-experience-2{
+    margin-top: 200px;
+    height: 250px;
+  }
+
+  .card-experience-3{
+    margin-top: 20px;
+    height: 250px;
+  }
+
+  .education-section{
+    width: 100%;
+  }
+
+  .card-education{
+    width: 100%;
+    height: 100%;
+    margin-left: 15px;
+    margin-top: 10px;
+  }
 
  }
