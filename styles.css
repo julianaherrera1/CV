@@ -15,7 +15,7 @@
 /* Section 3: Services Design*/
 .services-section{
     width: 100%;
-    background-color: rgb(10, 0, 20);
+    background-color: rgb(18, 0, 36);
 }
 
 .text-gray-200 {
@@ -39,6 +39,11 @@
     transition: transform 0.3s;
   }
   
+  /* Section Skills: Design*/
+  
+
+
+
 
 /*Responsive Design*/
 
@@ -65,6 +70,12 @@
         margin-bottom: 20px;
     }
 
-    
-    
+    /*Skills responsive*/
+    .skills-section .cards-skills-section,
+  .skills-section .cards-f2 {
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas por fila en pantallas pequeñas */
+  }
+
+  
+
  }
