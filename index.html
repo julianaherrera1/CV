@@ -71,8 +71,10 @@
                                 </svg>
                               </a>
 
+                             
+
                                     <!-- Whatsapp -->
-                                <a href="https://wa.me/573117249900?text=¡Hola!%20Estoy%20interesado/a%20en%20conocer%20más%20sobre%20tus%20servicios%20o%20colaborar%20contigo.%20¿Podríamos%20hablar?" target="_blank" class="[&>svg]:h-5 [&>svg]:w-5 mx-2 text-gray-300 transition-colors duration-300 transform dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300">
+                                <a href="https://wa.me/573117249900?text=Hello!%20I'm%20interested%20in%20contacting%20you." target="_blank" class="[&>svg]:h-5 [&>svg]:w-5 mx-2 text-gray-300 transition-colors duration-300 transform dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300">
                                     <svg
                                     xmlns="http://www.w3.org/2000/svg"
                                     fill="currentColor"
@@ -132,9 +134,40 @@
                             </div>
     
                             <!-- Botón contacto -->
-                            <div class="text-center">
-                                <a href="#contact" class="inline-block px-8 py-3 mt-6 text-white bg-purple-500 hover:bg-purple-700 rounded-lg text-lg">Contact Me</a>
+                            <div class="text-center p-6">
+                                <button id="contactButton" class="inline-block px-8 py-3 text-white bg-purple-500 hover:bg-purple-700 rounded-lg text-lg">
+                                  Contact Me
+                                </button>
+
+                                   
+                              <!-- Sección oculta inicialmente -->
+                              <div id="contactSection" class="w-72 ml-40 hidden h-32 -mt-52 p-4 bg-purple-400 rounded-lg shadow-lg">
+                                <div class="flex items-center mb-4">
+                                  <!-- Icono de correo -->
+                                  <svg class="w-6 h-6 text-gray-200 mr-3" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 12h2a2 2 0 012 2v6H4v-6a2 2 0 012-2h2m4-4V4m0 8l4 4m-8-4l-4 4" />
+                                  </svg>
+                                  <a href="mailto:julianaherrera522@gmail.com" class=" text-gray-200 hover:underline font-semibold">Email Me</a>
+                                </div>
+                                <div class="flex items-center">
+                                  <!-- Icono de WhatsApp -->
+                                  <svg class="w-6 h-6 text-gray-200 mr-3" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 2H4a2 2 0 00-2 2v16l4-4h14a2 2 0 002-2V4a2 2 0 00-2-2z" />
+                                  </svg>
+                                  <a href="https://wa.me/573117249900?text=Hello!%20I'm%20interested%20in%20contacting%20you." target="_blank" class="text-gray-200 hover:underline font-semibold">
+                                    WhatsApp Me
+                                  </a>
+                                </div>
+                              </div>
                             </div>
+                            
+                            <script>
+                              document.getElementById('contactButton').addEventListener('click', function () {
+                                const contactSection = document.getElementById('contactSection');
+                                contactSection.classList.toggle('hidden');
+                              });
+                            </script>
+                            
                            
                         </div>
                     </div>
@@ -546,9 +579,41 @@
                           User-centered design specialist with a proven ability to transform ideas into impactful visual solutions. Experienced in creating intuitive and engaging interfaces tailored to client needs and market demands.
                         </p>
     
-                        <button class="px-8 py-3 mt-6 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-purple-600 rounded-md hover:bg-purple-500 focus:outline-none focus:ring focus:ring-purple-400 focus:ring-opacity-50">
-                            Contac Me!
-                        </button>
+                       <!-- Botón contacto en el footer -->
+                    <div class="p-6">
+                      <button id="footerContactButton" class="px-8 py-3 mt-6 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-purple-600 rounded-md hover:bg-purple-500 focus:outline-none focus:ring focus:ring-purple-400 focus:ring-opacity-50">
+                          Contact Me!
+                      </button>
+
+                      <!-- Sección oculta inicialmente -->
+                      <div id="footerContactSection" class="w-72 mx-auto hidden h-32 mt-4 p-4 bg-purple-400 rounded-lg shadow-lg">
+                          <div class="flex items-center mb-4">
+                              <!-- Icono de correo -->
+                              <svg class="w-6 h-6 text-gray-200 mr-3" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 12h2a2 2 0 012 2v6H4v-6a2 2 0 012-2h2m4-4V4m0 8l4 4m-8-4l-4 4" />
+                              </svg>
+                              <a href="mailto:julianaherrera522@gmail.com" class="text-gray-200 hover:underline font-semibold">Email Me</a>
+                          </div>
+                          <div class="flex items-center">
+                              <!-- Icono de WhatsApp -->
+                              <svg class="w-6 h-6 text-gray-200 mr-3" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 2H4a2 2 0 00-2 2v16l4-4h14a2 2 0 002-2V4a2 2 0 00-2-2z" />
+                              </svg>
+                              <a href="https://wa.me/573117249900?text=Hello!%20I'm%20interested%20in%20contacting%20you." target="_blank" class="text-gray-200 hover:underline font-semibold">
+                                  WhatsApp Me
+                              </a>
+                          </div>
+                      </div>
+                    </div>
+
+                    <script>
+                      // Funcionalidad del botón en el footer
+                      document.getElementById("footerContactButton").addEventListener("click", function () {
+                          const contactSection = document.getElementById("footerContactSection");
+                          contactSection.classList.toggle("hidden");
+                      });
+                    </script>
+
     
                         <div class="mt-6 md:mt-8">
     
